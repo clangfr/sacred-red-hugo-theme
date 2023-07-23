@@ -2,10 +2,12 @@
 <html>
     {{- partial "head.html" . -}}
     <body>
-        {{- partial "header.html" . -}}
-        {{- partial "menu.html" (dict "menuID" "main" "page" .) }}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
+        <div class="layout">
+            {{- partial "header.html" . -}}
+            {{- partial "menu.html" (dict "menuID" "main" "page" .) }}
+            <main class="content">
+            {{- block "main" . }}{{- end }}
+            </main>
         </div>
         {{- partial "footer.html" . -}}
     </body>
