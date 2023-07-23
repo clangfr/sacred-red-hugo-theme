@@ -1,0 +1,28 @@
+body {
+  background: #000;
+  color: #fff;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  border: 1px dashed green;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.header .title {
+  font-size: 2rem;
+}
+
+.prose {
+  width: 20rem;
+  border: 1px solid yellow;
+}
